@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Amir Khan</title>
+    <title>Homepage</title>
 
     <!-- Bootstrap -->
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     
@@ -34,7 +35,6 @@
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
-  <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
@@ -50,6 +50,7 @@
         </ul>
       </li>
       <li><a href="#contactus" data-toggle="modal">Contact Us</a></li>
+      
       <li><a href="/home">Join Now</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -65,42 +66,22 @@
     </div>
   </div><!-- /.navbar-collapse -->
   
-<div class="container">
+  <div class="container">
     <div class="jumbotron text-center">
-    <h1>Amir Khan </h1>
-    <p>Book today with Amir 'King' Khan!</p>
-    <a href="joinnow.html" class="btn btn-primary">Join Now</a>
+    <h1>Trainers of Greatness</h1>
+    <p>Book your trainer of greatness today!</p>
+    <a href="/home" class="btn btn-primary">Book Here</a>
     </div>
+  </div>
   
-    <div class="row">
-      <div class="col-md-4">
-
-        <h3>Amir Khan</h3>
-        <p>Amir Khan (born 8 December 1986) is a British professional boxer and two-time former world champion, having held the unified WBA and IBF light-welterweight titles. He currently holds the WBC Silver welterweight title, and has fought at three weight classes: lightweight, light-welterweight, and welterweight.
-Khan is the youngest British Olympic boxing medalist, winning silver at the 2004 Athens Olympics, at the age of 17. He is also one of the youngest ever British world champions, winning the WBA light-welterweight title at the age of 22. The International Business Times ranked him the eighth best pound for pound boxer in 2011. As an amateur, he scored notable wins over two-time Olympic gold medalist Mario Kindelán and future world champion Victor Ortiz. As a professional, Khan holds notable wins over nine world champions, including Andreas Kotelnik, Marcos Maidana, Julio Díaz, Luis Collazo, Chris Algieri, Paulie Malignaggi, Devon Alexander, Marco Antonio Barrera, and Zab Judah.</p>
-        <a href="#" class="btn btn-danger">View</a>
-      </div>
-      <div class="col-md-4">
-      <a href="#" class="thumbnail">
-        <img src="{{ url_for('static', filename='images/ak.jpg') }}" alt="Amir Khan">
-        </a> 
-        <ul>
-          
-          <li>Bouts	34</li>
-          <li>Rounds: 203 </li>
-          <li>KOs:	56% </li>
-          <li>Division:	welterweight</li>
-          <li>Stance: orthodox</li>
-          <li>Height:	5′ 8½″   /   174cm </li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <a class="twitter-timeline" href="https://twitter.com/amirkingkhan" data-widget-id="710541523130126337">Tweets by @amirkingkhan</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
+  <div class="container">
+    <div class = "row" id = "legends">
+    <div class = "col_md_12">
+      <img src="{{ url_for('static', filename='images/tofg.jpg') }}" align = "middle" style ="width:1170px;height;400px;"></img>
     </div>
-  </div> 
-
+    </div>  
+  </div>
+  
   <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
       <div class="container">
         <div class="navbar-text pull-left">
@@ -114,7 +95,8 @@ Khan is the youngest British Olympic boxing medalist, winning silver at the 2004
       </div>
   </div>  
   
-  <div class="modal fade" id="contactus" role="dialog">
+  
+<div class="modal fade" id="contactus" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
           <form class="form-horizontal" role="form">   
@@ -149,7 +131,9 @@ Khan is the youngest British Olympic boxing medalist, winning silver at the 2004
           </form>
         </div>
     </div>
-</div>   
+</div>
+
+
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -158,3 +142,4 @@ Khan is the youngest British Olympic boxing medalist, winning silver at the 2004
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
   </body>
 </html>
+
