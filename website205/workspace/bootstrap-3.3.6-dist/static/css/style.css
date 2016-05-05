@@ -1,0 +1,37 @@
+#brand-image{
+    width:50px;
+    height:50px;
+    float:center;
+}
+
+.jumbotron{
+    padding-top: 100px;
+}
+
+.navbar-text > a {
+    colour: inherit;
+    text-decoration: none;
+}
+
+.navbar-default {
+    background-color: #A4A4A4;
+    border-color: #FFFFFF;
+}
+
+body {
+    padding-top:20px;
+    padding-bottom:100px;
+}
+
+P {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar-brand {
+    padding: 0px 15px;
+}
+

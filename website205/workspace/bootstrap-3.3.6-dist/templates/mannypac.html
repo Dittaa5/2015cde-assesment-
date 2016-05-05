@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Manny Pacquiao</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  </head>
+  
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html" Boxing>
+               <img id="brand-image" class="center-block" alt="logo" src="{{ url_for('static', filename='images/boxinglogo.jpg') }}"/>
+            </a> 
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/xtrainers">X Trainers</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Trainers <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="/miketyson">Mike Tyson</a></li>
+          <li class="divider"></li>
+          <li><a href="/mannypac">Manny Pacquiao</a></li>
+          <li class="divider"></li>
+          <li><a href="/amirkhan">Amir Khan</a></li>
+        </ul>
+      </li>
+      <li><a href="#contactus" data-toggle="modal">Contact Us</a></li>
+      <li><a href="/home">Join Now</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <form class="navbar-form" role="search" action="http://www.google.com/search">
+        <div class="input-group">
+            <input type="text" class="form-control" size="60px" placeholder="Search" name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+    </ul>
+    </div>
+  </div><!-- /.navbar-collapse -->
+  
+<div class="container">
+    <div class="jumbotron text-center">
+    <h1>Manny Pacquiao </h1>
+    <p>Book today with Manny "pacman" Pacquiao!</p>
+    <a href="joinnow.html" class="btn btn-primary">Join Now</a>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-4">
+
+        <h3>Manny Pacquiao</h3>
+        <p>Born in the Philippines in 1978, Manny Pacquiao began boxing professionally at age 16. After beating Thailand's Chatchai Sasakul to win the WBC flyweight championship in 1998, he continued to overwhelm his era's top competitors en route to titles in eight separate weight divisions. Along with his boxing career, Pacquiao has twice been elected to the Philippine House of Representatives. When he was a teenager, Pacquiao left his family and boarded a ship to Manila, Philippines, in hopes of training as a boxer and launching a career in the sport. When he was a teenager, Pacquiao left his family and boarded a ship to Manila, Philippines, in hopes of training as a boxer and launching a career in the sport. Not long after, in January of 1995, his goals gained some traction; at age 16, he stepped into the ring for his first professional bout, against Edmund Ignacio. Pacquiao won the fight in four rounds, in a unanimous decision. The victory propelled him on a successful boxing run that would encompass the better part of two decades.</p>
+        <a href="#" class="btn btn-danger">View</a>
+      </div>
+      <div class="col-md-4">
+      <a href="#" class="thumbnail">
+        <img src="{{ url_for('static', filename='images/pacman.jpg') }}" alt="Manny Pacquiao">
+        </a> 
+        <ul>
+          <li>Bouts: 65</li>
+          <li>Rounds: 419 </li>
+          <li>KOs:	58% </li>
+          <li>Division:	welterweight</li>
+          <li>Stance:	southpaw </li>
+          <li>Height:	5′ 5½″   /   166cm </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+      <a class="twitter-timeline" href="https://twitter.com/mannypacquiao" data-widget-id="710518223041593344">Tweets by @mannypacquiao</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+  </div> 
+
+  <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+      <div class="container">
+        <div class="navbar-text pull-left">
+            <p> All rights reserved 2016</p>
+        </div>
+        <div class="navbar-text pull-right">
+            <a href="https://en-gb.facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a>
+            <a href="https://twitter.com/?lang=en-gb"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://www.youtube.com/?gl=GB"><i class="fa fa-youtube-square fa-2x"></i></a>
+        </div>
+      </div>
+  </div>  
+     
+  <div class="modal fade" id="contactus" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <form class="form-horizontal" role="form">   
+            <div class="modal-header">
+                <h4>Contact</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                  <lable for="contact-name" class="col-sm-2 control-lable">Name</lable>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="contact-name" placeholder="first and last name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <lable for="contact-email" class="col-sm-2 control-lable">Email</lable>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="contact-email" placeholder="example@domain.com">
+                  </div>
+                </div>
+                 <div class="form-group">
+                  <lable for="contact-message" class="col-sm-2 control-lable">Message</lable>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" rows="4"></textarea>
+                  </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default" data-dismiss="modal">Close</a>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+            
+          </form>
+        </div>
+    </div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  </body>
+</html>

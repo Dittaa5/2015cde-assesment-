@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Amir Khan</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  </head>
+  
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html" Boxing>
+               <img id="brand-image" class="center-block" alt="logo" src="{{ url_for('static', filename='images/boxinglogo.jpg') }}"/>
+            </a> 
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/xtrainers">X Trainers</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Trainers <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="/miketyson">Mike Tyson</a></li>
+          <li class="divider"></li>
+          <li><a href="/mannypac">Manny Pacquiao</a></li>
+          <li class="divider"></li>
+          <li><a href="/amirkhan">Amir Khan</a></li>
+        </ul>
+      </li>
+      <li><a href="#contactus" data-toggle="modal">Contact Us</a></li>
+      <li><a href="/home">Join Now</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <form class="navbar-form" role="search" action="http://www.google.com/search">
+        <div class="input-group">
+            <input type="text" class="form-control" size="60px" placeholder="Search" name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+    </ul>
+    </div>
+  </div><!-- /.navbar-collapse -->
+  
+<div class="container">
+    <div class="jumbotron text-center">
+    <h1>Amir Khan </h1>
+    <p>Book today with Amir 'King' Khan!</p>
+    <a href="joinnow.html" class="btn btn-primary">Join Now</a>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-4">
+
+        <h3>Amir Khan</h3>
+        <p>Amir Khan (born 8 December 1986) is a British professional boxer and two-time former world champion, having held the unified WBA and IBF light-welterweight titles. He currently holds the WBC Silver welterweight title, and has fought at three weight classes: lightweight, light-welterweight, and welterweight.
+Khan is the youngest British Olympic boxing medalist, winning silver at the 2004 Athens Olympics, at the age of 17. He is also one of the youngest ever British world champions, winning the WBA light-welterweight title at the age of 22. The International Business Times ranked him the eighth best pound for pound boxer in 2011. As an amateur, he scored notable wins over two-time Olympic gold medalist Mario Kindelán and future world champion Victor Ortiz. As a professional, Khan holds notable wins over nine world champions, including Andreas Kotelnik, Marcos Maidana, Julio Díaz, Luis Collazo, Chris Algieri, Paulie Malignaggi, Devon Alexander, Marco Antonio Barrera, and Zab Judah.</p>
+        <a href="#" class="btn btn-danger">View</a>
+      </div>
+      <div class="col-md-4">
+      <a href="#" class="thumbnail">
+        <img src="{{ url_for('static', filename='images/ak.jpg') }}" alt="Amir Khan">
+        </a> 
+        <ul>
+          
+          <li>Bouts	34</li>
+          <li>Rounds: 203 </li>
+          <li>KOs:	56% </li>
+          <li>Division:	welterweight</li>
+          <li>Stance: orthodox</li>
+          <li>Height:	5′ 8½″   /   174cm </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/amirkingkhan" data-widget-id="710541523130126337">Tweets by @amirkingkhan</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+  </div> 
+
+  <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+      <div class="container">
+        <div class="navbar-text pull-left">
+            <p> All rights reserved 2016</p>
+        </div>
+        <div class="navbar-text pull-right">
+            <a href="https://en-gb.facebook.com/"><i class="fa fa-facebook-square fa-2x"></i></a>
+            <a href="https://twitter.com/?lang=en-gb"><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://www.youtube.com/?gl=GB"><i class="fa fa-youtube-square fa-2x"></i></a>
+        </div>
+      </div>
+  </div>  
+  
+  <div class="modal fade" id="contactus" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <form class="form-horizontal" role="form">   
+            <div class="modal-header">
+                <h4>Contact</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                  <lable for="contact-name" class="col-sm-2 control-lable">Name</lable>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="contact-name" placeholder="first and last name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <lable for="contact-email" class="col-sm-2 control-lable">Email</lable>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="contact-email" placeholder="example@domain.com">
+                  </div>
+                </div>
+                 <div class="form-group">
+                  <lable for="contact-message" class="col-sm-2 control-lable">Message</lable>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" rows="4"></textarea>
+                  </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default" data-dismiss="modal">Close</a>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+            
+          </form>
+        </div>
+    </div>
+</div>   
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  </body>
+</html>
